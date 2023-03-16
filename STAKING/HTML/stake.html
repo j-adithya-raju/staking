@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/stake.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="Home.html" class="brand"><img src="../images/logo_new2.png" alt=""></a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a class="menu-link" href="stake.html">STAKE</a></li>
+                    <li class="menu-item"><a class="menu-link" href="swap.html">SWAP</a></li>
+                </ul>
+            </div>
+            <a href="#" class="menu-block gradient-background"><i class="fa-solid fa-wallet fa-lg"
+                    style="padding-right: 10px;"></i>Connect Wallet</a>
+        </nav>
+    </header>
+    <!-- Main Section -->
+    <main class="main">
+
+
+        <section class="swap-section banner banner-section ">
+            <div class="container banner-column swap-bg">
+
+                <div id="wrapper">
+                    <div id="sliderContainer">
+                        <div class="row">
+
+                            <div class="col-md-12 mb-3">
+                                <h3 class="swap-header" style="text-align:center;">Rewards calculator</h3>
+                            </div>
+                            <div class="col-md-12 mb-2">
+                                <p style="text-align:center; color:var( --light-gray)">select your amount and time frame
+                                </p>
+                            </div>
+
+                            <div class="col-md-12 mb-3 amount-timeframe">
+
+                                <div style="display:flex; justify-content:space-between;">
+
+                                    <div style="display:flex; justify-content:center;">
+                                        <ul class="mt-3" style="display: inline-block;">
+                                            <li><img src="../images/swap-logo.png" alt=""></li>
+                                        </ul>
+                                        <ul class="mt-3" style="text-align:center;">
+                                            <li>Kling</li>
+                                            <li>13%apy</li>
+                                        </ul>
+                                    </div>
+
+                                    <ul class="mt-3">
+                                        <li>Total Amount</li>
+                                        <li>900000000000</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <style>
+                            
+                        </style>
+                        <div class="pl-3">
+                            <input type="range" value="70" min="0" max="100" oninput="rangevalue.value=value" />
+                            <output id="rangevalue">70</output>
+
+                            <br>
+                            <br>
+
+                            <input type="range" value="70" min="0" max="100" id="range"
+                                oninput="rangenumber.value=value" />
+                            <output id="rangenumber">70</output>
+
+                        </div>
+
+                        <script>
+                            
+                        </script>
+                        
+                        <div class="col-md-12">
+                            <p class="swap-content">Your estimated kling rewards</p>
+                        </div>
+                        <div class="col-md-12 mb-3 estimated-kling-rewards">
+                            <div>
+                                <h6>50000 Kling = $ 05.98</h6>
+                                <p class="mb-0">Based on the current Kling price of $ 5.90 USD.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h6 class="note">NOTE: Staking rates are variable. Crypto assets are high risk
+                                and are not regulated.</h6>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <a href="#" class="mt-2 swap gradient-background">Stake <i
+                                    class="bx bx-right-arrow-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script>
+
+                    function rangeSlider(value) {
+                        document.getElementById("rangeValue").innerHTML = value;
+                    }
+
+                    function rangeSlider2(value) {
+                        document.getElementById("rangeValue2").innerHTML = value;
+                    }
+
+                </script>
+            </div>
+        </section>
+
+
+
+        <style>
+
+        </style>
+        <div class="container media-container mt-5">
+
+            <style>
+
+            </style>
+            <div class="row">
+                <div class="col-lg-12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><label>Amount staked</label></th>
+                                <th><label>staked on</label></th>
+                                <th><label>Rewards</label></th>
+                                <th><label>Payment</label></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Amount staked">5000000 <br> 05.98 $</td>
+                                <td data-label="staked on">09/02/2023 <br> 06:56:07</td>
+                                <td data-label="Rewards">5000055 <br> Kling 06.00 $</td>
+                                <td data-label="Payment"><button
+                                        class="btn-invoice gradient-background">unstake</button></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Amount staked">5000000 <br> 05.98 $</td>
+                                <td data-label="staked on">09/02/2023 <br> 06:56:07</td>
+                                <td data-label="Rewards">5000055 <br> Kling 06.00 $</td>
+                                <td data-label="Payment"><button
+                                        class="btn-invoice gradient-background">unstake</button></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Amount staked">5000000 <br> 05.98 $</td>
+                                <td data-label="staked on">09/02/2023 <br> 06:56:07</td>
+                                <td data-label="Rewards">5000055 <br> Kling 06.00 $</td>
+                                <td data-label="Payment"><button
+                                        class="btn-invoice gradient-background">unstake</button></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Amount staked">5000000 <br> 05.98 $</td>
+                                <td data-label="staked on">09/02/2023 <br> 06:56:07</td>
+                                <td data-label="Rewards">5000055 <br> Kling 06.00 $</td>
+                                <td data-label="Payment"><button
+                                        class="btn-invoice gradient-background">unstake</button></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Amount staked">5000000 <br> 05.98 $</td>
+                                <td data-label="staked on">09/02/2023 <br> 06:56:07</td>
+                                <td data-label="Rewards">5000055 <br> Kling 06.00 $</td>
+                                <td data-label="Payment"><button
+                                        class="btn-invoice gradient-background">unstake</button></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Amount staked">5000000 <br> 05.98 $</td>
+                                <td data-label="staked on">09/02/2023 <br> 06:56:07</td>
+                                <td data-label="Rewards">5000055 <br> Kling 06.00 $</td>
+                                <td data-label="Payment"><button
+                                        class="btn-invoice gradient-background">unstake</button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="first">
+                            <img src="../images/logo_new (1).png" alt="">
+                            <br />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12">
+                        <!-- <div class="second">
+                     <h4> Navigate</h4>
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                     </ul>
+                  </div> -->
+                    </div>
+
+                    <div class="col-md-4 col-xs-12">
+                        <div class="third">
+                            <a target="_blank" style="margin-left: 10px;">SWAP</a>
+                            <a target="_blank" style="margin-left: 10px;">STAKE</a>
+                            <!-- <ul>
+                        <li>Andreea Mihaela Bunget </li>
+                     </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="line"></div>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="footer-copyrights">
+                            <p>Copyright © 2022 All Right Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+                        <!-- <div class="line"></div> -->
+                        <div class="second2">
+                            <a href="" target="_blank"> <i class="fab fa-codepen fa-2x margin"></i></a>
+                            <a href="" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                            <a href="" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                            <a href="" target="_blank"><i class="fab fa-youtube fa-2x margin"></i></a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+
+    </main>
+    <script src="../js/script.js"></script>
+    <script src="../js/stake.js"></script>
+</body>
+
+</html>

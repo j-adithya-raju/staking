@@ -1,0 +1,86 @@
+.swap-amount-timeframe {
+
+    border-radius: 10px;
+    border: 1px solid rgb(114, 109, 70);
+    -webkit-box-shadow: 0px 0px 19px -6px rgba(209, 160, 15, 1);
+    -moz-box-shadow: 0px 0px 19px -6px rgba(209, 160, 15, 1);
+    box-shadow: 0px 0px 19px -6px rgba(209, 160, 15, 1);
+
+}
+
+.max-kling {
+    background: #70FF00;
+    background: linear-gradient(to right, #70FF00 0%, #FFB800 44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.from-to {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: aqua;
+    font-size: 18px;
+    text-shadow: rgba(0, 238, 255, 0.51) 0px 0px 11px;
+}
+
+.token-approval {
+    border-radius: 15px;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.stake-bg {
+    height: 68vh;
+}
+
+#wrapper {
+    background-image: url(../images/Crypto-Group.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 50vw 70vh;
+}
+
+@media (max-width: 1400px) {
+    #wrapper{
+        background-size: 70vw 77vh;
+    }
+}
+
+@media (max-width: 992px) {
+    #wrapper{
+        background-size: 108vw 70vh;
+    }
+}
+
+@media(max-width: 900px) {
+    #wrapper{
+        background-size: 108vw 70vh;
+    }
+}
+
+@media (max-height: 660px) {
+    #wrapper{
+        background-size: 91vw 100vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .stake-bg{
+        height: 78vh;
+    }
+    #sliderContainer{
+        margin: 0 20px;
+    }
+    #wrapper{
+        background-size: 120vw 70vh;
+    }
+}
+
+@media (max-width: 476px) {
+    #wrapper{
+        background-size: 111vw 53vh;
+    }
+}
